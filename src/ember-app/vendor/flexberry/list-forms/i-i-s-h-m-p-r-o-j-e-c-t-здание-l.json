@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-h-m-p-r-o-j-e-c-t-здание-e",
+  "editForm": "i-i-s-h-m-p-r-o-j-e-c-t-здание-e",
+  "external": false,
+  "caption": "Здание",
+  "name": "IISHMPROJECTЗданиеL",
+  "className": "ЗданиеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-p-r-o-j-e-c-t-здание",
+      "modelProjection": "ЗданиеL"
+    }
+  ]
+}

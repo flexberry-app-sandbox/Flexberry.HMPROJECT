@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISHMPROJECTЧеловек",
+  "modelName": "i-i-s-h-m-p-r-o-j-e-c-t-человек",
+  "className": "Человек",
+  "nameSpace": "IIS.HMPROJECT",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЧеловекE",
+      "modelName": "i-i-s-h-m-p-r-o-j-e-c-t-человек",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЧеловекL",
+      "modelName": "i-i-s-h-m-p-r-o-j-e-c-t-человек",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

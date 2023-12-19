@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "HMPROJECT",
+  "applicationTitle": "HMPROJECT",
+  "items": [
+    {
+      "link": null,
+      "menuName": "h-m-p-r-o-j-e-c-t",
+      "caption": "HMPROJECT",
+      "title": "HMPROJECT",
+      "children": [
+        {
+          "link": "i-i-s-h-m-p-r-o-j-e-c-t-прибор-учета-l",
+          "menuName": null,
+          "caption": "Прибор учета",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-h-m-p-r-o-j-e-c-t-здание-l",
+          "menuName": null,
+          "caption": "Здание",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-h-m-p-r-o-j-e-c-t-человек-l",
+          "menuName": null,
+          "caption": "Человек",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-l",
+          "menuName": null,
+          "caption": "Показ приборов",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-l",
+          "menuName": null,
+          "caption": "Приборы зд",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

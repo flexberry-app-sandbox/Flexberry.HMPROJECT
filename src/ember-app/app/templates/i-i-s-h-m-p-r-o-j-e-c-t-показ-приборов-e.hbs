@@ -1,0 +1,106 @@
+<h3 class="ui header">{{t "forms.i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номер
+      class=(if (v-get validationModel "номер" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e.номер-caption")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e-номер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номер" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.м
+      class=(if (v-get validationModel "м" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e.м-caption")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e-м=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "м" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.т
+      class=(if (v-get validationModel "т" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e.т-caption")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e-т=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "т" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.п
+      class=(if (v-get validationModel "п" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e.п-caption")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e-п=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "п" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e.q-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.q
+      class=(if (v-get validationModel "q" "isInvalid") "error")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e-q=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "q" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e.приборыЗд-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.приборыЗд
+      displayAttributeName="номер"
+      autocomplete=true
+      relationName="приборыЗд"
+      projection="ПриборыЗдL"
+      title=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e.приборыЗд-caption")
+      readonly=readonly
+      componentName="приборыЗдLookup"
+      class=(if (v-get validationModel "приборыЗд" "isInvalid") "error")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e-приборыЗд=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "приборыЗд" "message")}}
+  </div>
+</form>

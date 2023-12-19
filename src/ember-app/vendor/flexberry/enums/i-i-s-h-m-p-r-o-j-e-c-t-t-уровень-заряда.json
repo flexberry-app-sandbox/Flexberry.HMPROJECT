@@ -1,0 +1,9 @@
+﻿{
+  "nameSpace": "IIS.HMPROJECT",
+  "className": "tУровеньЗаряда",
+  "enumObjects": {
+    "Высокий": "",
+    "Средний": "",
+    "Низкий": ""
+  }
+}

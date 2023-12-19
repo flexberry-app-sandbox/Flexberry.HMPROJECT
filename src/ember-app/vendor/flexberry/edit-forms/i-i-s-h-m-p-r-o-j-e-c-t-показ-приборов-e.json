@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ПриборыЗд",
+      "projection": "ПриборыЗдL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Показ приборов",
+  "name": "IISHMPROJECTПоказПриборовE",
+  "className": "ПоказПриборовE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов",
+      "modelProjection": "ПоказПриборовE"
+    }
+  ]
+}

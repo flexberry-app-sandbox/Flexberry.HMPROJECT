@@ -1,0 +1,125 @@
+<h3 class="ui header">{{t "forms.i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номер
+      class=(if (v-get validationModel "номер" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e.номер-caption")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e-номер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номер" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.ммакс
+      class=(if (v-get validationModel "ммакс" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e.ммакс-caption")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e-ммакс=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "ммакс" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.ммин
+      class=(if (v-get validationModel "ммин" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e.ммин-caption")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e-ммин=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "ммин" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.тмакс
+      class=(if (v-get validationModel "тмакс" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e.тмакс-caption")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e-тмакс=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "тмакс" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.тмин
+      class=(if (v-get validationModel "тмин" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e.тмин-caption")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e-тмин=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "тмин" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.пмакс
+      class=(if (v-get validationModel "пмакс" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e.пмакс-caption")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e-пмакс=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "пмакс" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.пмин
+      class=(if (v-get validationModel "пмин" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e.пмин-caption")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e-пмин=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "пмин" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e-уровеньЗаряда="true">
+    <label>{{t "forms.i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e.уровеньЗаряда-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-h-m-p-r-o-j-e-c-t-t-уровень-заряда")
+      value=model.уровеньЗаряда
+      class=(if (v-get validationModel "уровеньЗаряда" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "уровеньЗаряда" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e.здание-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.здание
+      displayAttributeName="улица"
+      autocomplete=true
+      relationName="здание"
+      projection="ЗданиеL"
+      title=(t "forms.i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e.здание-caption")
+      readonly=readonly
+      componentName="зданиеLookup"
+      class=(if (v-get validationModel "здание" "isInvalid") "error")
+      data-test-i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e-здание=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "здание" "message")}}
+  </div>
+</form>

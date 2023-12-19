@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e",
+  "editForm": "i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд-e",
+  "external": false,
+  "caption": "Приборы зд",
+  "name": "IISHMPROJECTПриборыЗдL",
+  "className": "ПриборыЗдL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-p-r-o-j-e-c-t-приборы-зд",
+      "modelProjection": "ПриборыЗдL"
+    }
+  ]
+}

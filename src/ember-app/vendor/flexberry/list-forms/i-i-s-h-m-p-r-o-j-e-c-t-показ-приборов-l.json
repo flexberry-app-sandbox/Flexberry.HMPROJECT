@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e",
+  "editForm": "i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов-e",
+  "external": false,
+  "caption": "Показ приборов",
+  "name": "IISHMPROJECTПоказПриборовL",
+  "className": "ПоказПриборовL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-p-r-o-j-e-c-t-показ-приборов",
+      "modelProjection": "ПоказПриборовL"
+    }
+  ]
+}

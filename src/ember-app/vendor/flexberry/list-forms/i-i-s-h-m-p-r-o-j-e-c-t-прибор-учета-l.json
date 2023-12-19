@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-h-m-p-r-o-j-e-c-t-прибор-учета-e",
+  "editForm": "i-i-s-h-m-p-r-o-j-e-c-t-прибор-учета-e",
+  "external": false,
+  "caption": "Прибор учета",
+  "name": "IISHMPROJECTПриборУчетаL",
+  "className": "ПриборУчетаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-p-r-o-j-e-c-t-прибор-учета",
+      "modelProjection": "ПриборУчетаL"
+    }
+  ]
+}
